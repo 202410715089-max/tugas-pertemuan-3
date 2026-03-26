@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Layout Web</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background-color: #ddd;
+        }
+
+        .header {
+            background: #ccc;
+            text-align: center;
+            padding: 30px;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .navbar {
+            background: linear-gradient(to right, purple, violet);
+            padding: 10px;
+        }
+
+        .navbar a {
+            color: white;
+            margin-right: 15px;
+            text-decoration: none;
+        }
+
+        /* SLIDER KUNING KELAP-KELIP */
+        .slider {
+            background: yellow;
+            text-align: center;
+            padding: 50px;
+            font-weight: bold;
+            font-size: 25px;
+            animation: kedip 1s infinite;
+        }
+
+        @keyframes kedip {
+            0%   { background-color: yellow; }
+            50%  { background-color: orange; }
+            100% { background-color: yellow; }
+        }
+
+        .content {
+            display: flex;
+            padding: 20px;
+        }
+
+        .main {
+            width: 70%;
+            background: #eee;
+            padding: 15px;
+            margin-right: 10px;
+        }
+
+        .sidebar {
+            width: 30%;
+            background: #eee;
+            padding: 15px;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="header">
+    Header
+</div>
+
+<div class="navbar">
+    <a href="form.html">Form Pendaftaran</a>
+    <a href="tes-layout.html">Web Rian Strore</a>
+    <a href="portopolio.html">portopolio</a>
+</div>
+
+<div class="slider">
+    IMAGE SLIDER
+</div>
+
+<div class="content">
+    
+    <div class="main">
+        <h2>JUDUL HEADING</h2>
+        <small>Judul Deskripsi, 17 Maret, 2025</small>
+        <p><b>Materi Pembelajaran CSS</b></p>
+        <p>
+            Cascading Style Sheets (CSS) adalah bahasa stylesheet yang digunakan 
+            untuk mendesain dan mengatur tampilan halaman web yang ditulis dalam HTML. 
+            CSS memungkinkan programmer untuk memisahkan konten dari desain.
+        </p>
+    </div>
+
+    <div class="sidebar">
+        <h3>KATEGORI</h3>
+        <ol>
+            <li><a href="form.html">Form Pendaftaran</a></li>
+            <li><a href="tes-layout.html">Web Link Rian</a></li>
+            <li><a href="portopolio.html">portopolio Rian</a></li>
+        </ol>
+    </div>
+
+</div>
+
+</body>
+</html>
